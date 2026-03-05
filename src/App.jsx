@@ -4,6 +4,7 @@ import './App.css'
 const NAV_LINKS = ['About', 'Skills', 'Projects', 'Contact']
 const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`
 const HERO_WORDS = ['Analyst.', 'Data Scientist.', 'Builder.', 'Problem Solver.']
+const THEME_KEY = 'about-me-theme'
 
 const SKILLS = [
   { category: 'Data Science', items: ['Python', 'Pandas', 'NumPy', 'Statistics', 'EDA'] },
@@ -484,11 +485,29 @@ function Footer() {
 }
 
 export default function App() {
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem(THEME_KEY)
+    if (savedTheme === 'dark' || savedTheme === 'light') return savedTheme
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+  })
+
   useScrollReveal()
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme
+    localStorage.setItem(THEME_KEY, theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+  }
 
   return (
     <>
       <Cursor />
+      <button type="button" className="theme-toggle theme-toggle-corner" onClick={toggleTheme} aria-label="Toggle color theme">
+        {theme === 'dark' ? 'Light' : 'Dark'}
+      </button>
       <Navbar />
       <main>
         <Hero />

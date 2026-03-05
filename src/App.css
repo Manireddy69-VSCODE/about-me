@@ -10,6 +10,7 @@
 }
 
 :root {
+  color-scheme: dark;
   --bg: #0a0a0a;
   --bg2: #111111;
   --bg3: #181818;
@@ -25,6 +26,20 @@
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
   --radius: 12px;
   --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f3f6fb;
+  --bg2: #eaf0f8;
+  --bg3: #dfe8f2;
+  --surface: #ffffff;
+  --border: rgba(15, 23, 42, 0.14);
+  --text: #0f172a;
+  --text-muted: #334155;
+  --text-dim: #64748b;
+  --accent: #0f9d69;
+  --accent2: #f97316;
 }
 
 html {
@@ -198,6 +213,38 @@ a {
 .nav-cta:hover {
   background: var(--accent) !important;
   color: #000 !important;
+}
+
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: 100px;
+  cursor: none;
+  transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.theme-toggle-corner {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1200;
+  background: rgba(10, 10, 10, 0.45);
+  backdrop-filter: blur(10px);
+}
+
+:root[data-theme='light'] .theme-toggle-corner {
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .hamburger {
@@ -1180,6 +1227,11 @@ a {
 }
 
 @media (max-width: 768px) {
+  .theme-toggle-corner {
+    top: 14px;
+    left: 14px;
+  }
+
   .navbar {
     padding: 20px 24px;
   }
