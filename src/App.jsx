@@ -1,114 +1,168 @@
 import './App.css'
 
 const skills = [
+  'Python',
+  'SQL',
+  'R',
+  'Pandas',
+  'Tableau',
+  'Power BI',
+  'Machine Learning',
+  'Statistics',
   'React',
   'FastAPI',
-  'Python',
-  'JavaScript',
-  'SQL',
-  'Netlify',
-  'Vercel',
-  'Git & GitHub',
 ]
 
 const projects = [
   {
     title: 'FLUX AI Tracker',
-    summary: 'AI-driven personal dashboard for journaling, words, books, quotes, and workout tracking.',
+    summary: 'Full-stack AI tracker for chat journaling, vocabulary, books, quotes, and workouts.',
     stack: ['React', 'FastAPI', 'Anthropic API'],
+    link: 'https://github.com/Manireddy69-VSCODE/flux-tracker',
+  },
+  {
+    title: 'Image Text Extraction & Localization',
+    summary: 'OCR workflow using Python and Tesseract to detect and extract text from images.',
+    stack: ['Python', 'Pytesseract', 'Computer Vision'],
     link: '#',
   },
   {
-    title: 'Portfolio Site',
-    summary: 'This personal website with a clean, bold visual style and clear project storytelling.',
-    stack: ['React', 'Vite', 'Responsive UI'],
-    link: '#',
-  },
-  {
-    title: 'API Playground',
-    summary: 'Experimental backend sandbox for testing endpoints, payloads, and deployment workflows.',
-    stack: ['Python', 'FastAPI', 'Netlify Functions'],
+    title: 'Walmart Retail Analysis',
+    summary: 'Sales analysis across 45 stores with trend analysis and linear regression forecasting.',
+    stack: ['Python', 'Pandas', 'Regression'],
     link: '#',
   },
 ]
 
+const profiles = [
+  {
+    label: 'Monkeytype',
+    value: 'Speed Typing Profile',
+    href: 'https://monkeytype.com/profile/manireddy',
+    sub: 'Practicing consistency, speed, and accuracy',
+  },
+  {
+    label: 'LeetCode',
+    value: 'Problem Solving Profile',
+    href: 'https://leetcode.com/u/Mani_reddy69/',
+    sub: 'DSA and interview-focused coding practice',
+  },
+  {
+    label: 'GitHub',
+    value: 'Code Portfolio',
+    href: 'https://github.com/manireddy7989',
+    sub: 'Projects, experiments, and full-stack builds',
+  },
+]
+
+const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`
+
 function App() {
   return (
-    <div className="site-shell">
-      <div className="bg-glow glow-left" />
-      <div className="bg-glow glow-right" />
-
+    <div className="app">
       <header className="topbar">
-        <a className="brand" href="#home">MR</a>
-        <nav className="topnav">
+        <a className="logo" href="#home">MR</a>
+        <nav>
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
+          <a href="#profiles">Profiles</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <main>
-        <section id="home" className="hero">
-          <p className="kicker">Software Developer</p>
+        <section id="home" className="hero card">
+          <p className="eyebrow">Data Science + Full Stack</p>
           <h1>Manikanth Reddy</h1>
-          <p className="hero-copy">
-            I build practical web products with clean frontend experiences and reliable backend systems.
+          <p>
+            I enjoy building useful products, solving coding problems, and improving speed typing discipline.
+            My focus is practical engineering with strong analytical thinking.
           </p>
-          <div className="hero-cta">
-            <a className="btn btn-primary" href="#projects">View Projects</a>
-            <a className="btn btn-outline" href="#contact">Contact Me</a>
+
+          <div className="metric-row">
+            <div>
+              <span>Focus</span>
+              <strong>Typing Speed</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>LeetCode Practice</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>Product Building</strong>
+            </div>
+          </div>
+
+          <div className="cta-row">
+            <a className="btn primary" href={resumeUrl} target="_blank" rel="noreferrer">View Resume</a>
+            <a className="btn" href={resumeUrl} download>Download Resume</a>
           </div>
         </section>
 
-        <section id="about" className="panel reveal">
+        <section id="about" className="card">
           <h2>About Me</h2>
           <p>
-            I focus on full-stack development with React on the frontend and Python/FastAPI on the backend.
-            I enjoy turning ideas into working products, then improving them through iteration, testing, and deployment.
+            Strong mathematical background from GATE preparation with practical experience in data analysis,
+            statistics, and machine learning. I have worked on OCR systems, retail data forecasting, and modern
+            web applications with API integrations.
           </p>
-        </section>
+          <p>
+            I also maintain disciplined skill-building habits through daily typing practice and coding challenges.
+          </p>
 
-        <section id="skills" className="panel reveal">
-          <h2>Skills</h2>
-          <div className="chip-grid">
+          <div className="chips">
             {skills.map((skill) => (
-              <span className="chip" key={skill}>{skill}</span>
+              <span key={skill}>{skill}</span>
             ))}
           </div>
         </section>
 
-        <section id="projects" className="panel reveal">
-          <h2>Featured Projects</h2>
+        <section id="profiles" className="card">
+          <h2>Coding & Typing Profiles</h2>
+          <div className="profile-grid">
+            {profiles.map((item) => (
+              <a key={item.label} className="profile-card" href={item.href} target="_blank" rel="noreferrer">
+                <div className="profile-top">
+                  <span>{item.label}</span>
+                  <strong>{item.value}</strong>
+                </div>
+                <p>{item.sub}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section id="projects" className="card">
+          <h2>Projects</h2>
           <div className="project-grid">
             {projects.map((project) => (
-              <article className="project-card" key={project.title}>
+              <article key={project.title} className="project-card">
                 <h3>{project.title}</h3>
                 <p>{project.summary}</p>
-                <div className="mini-chip-row">
+                <div className="stack-row">
                   {project.stack.map((tech) => (
-                    <span key={tech} className="mini-chip">{tech}</span>
+                    <span key={tech}>{tech}</span>
                   ))}
                 </div>
-                <a href={project.link} className="project-link">Case Study</a>
+                <a href={project.link} target="_blank" rel="noreferrer">Open</a>
               </article>
             ))}
           </div>
         </section>
 
-        <section id="contact" className="panel reveal contact-panel">
+        <section id="contact" className="card contact-card">
           <h2>Contact</h2>
-          <p>Open to internships, freelance work, and collaborative projects.</p>
-          <div className="contact-row">
-            <a href="mailto:manikanth.banswada@gmail.com">manikanth.banswada@gmail.com</a>
-            <a href="https://github.com/Manireddy69-VSCODE" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <div className="contact-links">
+            <a href="mailto:manireddy032003@gmail.com">manireddy032003@gmail.com</a>
+            <a href="https://github.com/manireddy7989" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </section>
       </main>
 
       <footer>
-        <p>© {new Date().getFullYear()} Manikanth Reddy. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Manikanth Reddy</p>
       </footer>
     </div>
   )
