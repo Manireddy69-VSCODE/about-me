@@ -1,4 +1,4 @@
-import './App.css'
+﻿import './App.css'
 
 const skills = [
   'Python',
@@ -9,15 +9,15 @@ const skills = [
   'Power BI',
   'Machine Learning',
   'Statistics',
-  'React',
-  'FastAPI',
+  'Data Visualization',
+  'Exploratory Data Analysis',
 ]
 
 const projects = [
   {
     title: 'FLUX AI Tracker',
-    summary: 'Full-stack AI tracker for chat journaling, vocabulary, books, quotes, and workouts.',
-    stack: ['React', 'FastAPI', 'Anthropic API'],
+    summary: 'AI-assisted project where I used tools to turn an idea into a working product and deployment.',
+    stack: ['AI Tools', 'Prompting', 'Deployment'],
     link: 'https://github.com/Manireddy69-VSCODE/flux-tracker',
   },
   {
@@ -51,7 +51,7 @@ const profiles = [
     label: 'GitHub',
     value: 'Code Portfolio',
     href: 'https://github.com/manireddy7989',
-    sub: 'Projects, experiments, and full-stack builds',
+    sub: 'Projects, experiments, and data work',
   },
 ]
 
@@ -72,11 +72,11 @@ function App() {
 
       <main>
         <section id="home" className="hero card">
-          <p className="eyebrow">Data Science + Full Stack</p>
+          <p className="eyebrow">Data Science</p>
           <h1>Manikanth Reddy</h1>
           <p>
-            I enjoy building useful products, solving coding problems, and improving speed typing discipline.
-            My focus is practical engineering with strong analytical thinking.
+            I am focused on Data Science, analytics, and problem solving. I use AI tools to build and deploy
+            projects faster while I continue improving my technical depth.
           </p>
 
           <div className="metric-row">
@@ -90,7 +90,7 @@ function App() {
             </div>
             <div>
               <span>Focus</span>
-              <strong>Product Building</strong>
+              <strong>Data Science Projects</strong>
             </div>
           </div>
 
@@ -104,11 +104,11 @@ function App() {
           <h2>About Me</h2>
           <p>
             Strong mathematical background from GATE preparation with practical experience in data analysis,
-            statistics, and machine learning. I have worked on OCR systems, retail data forecasting, and modern
-            web applications with API integrations.
+            statistics, and machine learning. I have worked on OCR systems and retail forecasting projects.
           </p>
           <p>
-            I also maintain disciplined skill-building habits through daily typing practice and coding challenges.
+            I do not position myself as a full-stack engineer. My core interest is data science, and I use AI tools
+            for faster execution and deployment.
           </p>
 
           <div className="chips">
@@ -162,7 +162,7 @@ function App() {
       </main>
 
       <footer>
-        <p>� {new Date().getFullYear()} Manikanth Reddy</p>
+        <p>© {new Date().getFullYear()} Manikanth Reddy</p>
       </footer>
     </div>
   )
