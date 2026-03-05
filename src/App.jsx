@@ -37,6 +37,7 @@ const projects = [
     summary: 'AI-assisted build and deployment practice to convert ideas into a working product quickly.',
     tags: ['AI Tools', 'Prompting', 'Deployment'],
     link: 'https://github.com/Manireddy69-VSCODE/flux-tracker',
+    primary: true,
   },
 ]
 
@@ -132,8 +133,8 @@ function App() {
         <section id="work" className="panel reveal-5">
           <h2>Selected Work</h2>
           <div className="project-grid">
-            {projects.map((project) => (
-              <article key={project.title} className="project-card">
+            {[...projects].sort((a, b) => Number(Boolean(b.primary)) - Number(Boolean(a.primary))).map((project) => (
+              <article key={project.title} className={`project-card${project.primary ? ' project-card-primary' : ''}`}>
                 <h3>{project.title}</h3>
                 <p>{project.summary}</p>
                 <div className="tag-row">

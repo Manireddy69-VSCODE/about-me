@@ -261,6 +261,11 @@ p {
   padding: 0.88rem;
 }
 
+.project-card-primary {
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px rgba(255, 107, 44, 0.16);
+}
+
 .project-card p {
   margin-top: 0.45rem;
   font-size: 0.9rem;
