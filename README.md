@@ -2,6 +2,10 @@
 
 Personal website and portfolio built with React + Vite.
 
+## Open Link
+
+https://manireddy69-vscode.github.io/about-me/
+
 ## Run locally
 
 ```bash
