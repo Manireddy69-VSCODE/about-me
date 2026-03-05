@@ -22,7 +22,7 @@ const PROJECTS = [
     tech: ['React', 'Vite', 'JS', 'UI Systems'],
     year: '2026',
     color: '#c8ff00',
-    link: 'https://github.com/Manireddy69-VSCODE/flux-tracker',
+    link: 'https://manireddy69-vscode.github.io/flux-tracker/',
   },
   {
     num: '02',
