@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Cursor from './components/Cursor.jsx'
 import Footer from './components/Footer.jsx'
 import Navbar from './components/Navbar.jsx'
 import ThemeToggle from './components/ThemeToggle.jsx'
@@ -38,7 +37,6 @@ export default function App() {
 
   return (
     <>
-      <Cursor />
       <ThemeToggle
         theme={theme}
         onToggle={() => setTheme((currentTheme) => (currentTheme === 'dark' ? 'light' : 'dark'))}

@@ -1,18 +1,8 @@
 import { contactLinks, heroSection, siteIdentity } from '../data/index.js'
-import useTypedWords from '../hooks/useTypedWords.js'
 
 export default function HeroSection({ resumeUrl }) {
-  const typedWord = useTypedWords(heroSection.rotatingWords)
-
   return (
     <section className="hero" id="hero">
-      <div className="hero-bg">
-        <div className="mesh mesh-1" />
-        <div className="mesh mesh-2" />
-        <div className="grid-overlay" />
-        <div className="noise" />
-      </div>
-
       <div className="hero-content">
         <div className="hero-eyebrow reveal">
           <span className="eyebrow-dot" />
@@ -25,9 +15,7 @@ export default function HeroSection({ resumeUrl }) {
           <span className="name-line accent">{siteIdentity.lastName}</span>
         </h1>
 
-        <div className="hero-title reveal">
-          I work across data and AI as a <span className="typed">{typedWord}<span className="caret" /></span>
-        </div>
+        <div className="hero-title reveal">{heroSection.roleTitle}</div>
 
         <p className="hero-desc reveal">{heroSection.description}</p>
 
@@ -41,7 +29,7 @@ export default function HeroSection({ resumeUrl }) {
         </div>
 
         <div className="hero-links reveal">
-          {contactLinks.slice(0, 3).map((link) => (
+          {contactLinks.slice(0, 4).map((link) => (
             <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
               <span>{link.label}</span>
               <span className="hero-link-arrow">{'->'}</span>
@@ -80,11 +68,6 @@ export default function HeroSection({ resumeUrl }) {
             ))}
           </div>
         </div>
-      </div>
-
-      <div className="scroll-hint">
-        <div className="scroll-line" />
-        <span>Scroll</span>
       </div>
     </section>
   )

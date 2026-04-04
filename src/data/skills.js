@@ -1,29 +1,29 @@
 export const skillsSection = {
   labelNumber: '02',
   label: 'Skills',
-  title: 'A stack built around thoughtful execution.',
+  title: 'Tools I use to build ML systems.',
   intro:
-    'I am strongest when analysis, modeling, and presentation all need to work together in one flow.',
+    'My toolkit is centered on data work, statistical reasoning, and production-minded machine learning pipelines.',
   groups: [
     {
-      category: 'Data Science',
-      summary: 'Exploring data, finding patterns, and translating them into decisions.',
-      items: ['Python', 'Pandas', 'NumPy', 'Statistics', 'EDA'],
+      category: 'Languages',
+      summary: 'Core programming and query languages I use across projects and analysis work.',
+      items: ['Python', 'SQL', 'R'],
     },
     {
-      category: 'Machine Learning',
-      summary: 'Building models with attention to feature quality and evaluation.',
-      items: ['Scikit-learn', 'Regression', 'Classification', 'Feature Engineering', 'Model Evaluation'],
+      category: 'ML & Statistics',
+      summary: 'Libraries and concepts I rely on for modeling, evaluation, and statistical reasoning.',
+      items: ['Pandas', 'NumPy', 'Scikit-learn', 'Regression', 'Hypothesis Testing'],
     },
     {
-      category: 'Analytics',
-      summary: 'Framing business questions and turning analysis into insight.',
-      items: ['SQL', 'Tableau', 'Power BI', 'BigQuery', 'Data Storytelling'],
+      category: 'Data & BI',
+      summary: 'Tools for querying, dashboarding, and translating data into usable decisions.',
+      items: ['MySQL', 'BigQuery', 'Tableau', 'Power BI', 'Statistics'],
     },
     {
-      category: 'Workflow',
-      summary: 'Shipping projects with cleaner structure, version control, and iteration.',
-      items: ['Git', 'Jupyter', 'VS Code', 'Google Colab', 'AI-assisted Workflow'],
+      category: 'Systems & Workflow',
+      summary: 'Building pipelines and interfaces around models instead of stopping at notebooks.',
+      items: ['FastAPI', 'Jupyter Notebook', 'Feature Engineering', 'DSA', 'Machine Learning'],
     },
   ],
 }

@@ -22,19 +22,19 @@ export const contactLinks = [
     href: 'https://github.com/manireddy7989',
   },
   {
+    label: 'Kaggle',
+    value: 'kaggle.com/manireddy45',
+    href: 'https://www.kaggle.com/manireddy45',
+  },
+  {
     label: 'LeetCode',
     value: 'leetcode.com/u/Mani_reddy69',
     href: 'https://leetcode.com/u/Mani_reddy69/',
-  },
-  {
-    label: 'X',
-    value: 'x.com/Mani_reddy69',
-    href: 'https://x.com/Mani_reddy69',
   },
 ]
 
 export const footerLinks = [
   { label: 'GitHub', href: 'https://github.com/manireddy7989' },
-  { label: 'X', href: 'https://x.com/Mani_reddy69' },
-  { label: 'Monkeytype', href: 'https://monkeytype.com/profile/manireddy' },
+  { label: 'Kaggle', href: 'https://www.kaggle.com/manireddy45' },
+  { label: 'LeetCode', href: 'https://leetcode.com/u/Mani_reddy69/' },
 ]

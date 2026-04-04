@@ -25,9 +25,9 @@ The app is organized so each kind of change has one obvious place:
 
 ```text
 src/
-  components/     shared UI pieces like Navbar, Footer, Cursor, ThemeToggle
+  components/     shared UI pieces like Navbar, Footer, and ThemeToggle
   data/           text, links, project details, and section content
-  hooks/          small reusable behavior like scroll reveal and typing effect
+  hooks/          small reusable behavior like scroll reveal
   sections/       page sections such as Hero, About, Skills, Projects, Contact
   styles/         main site stylesheet
   App.jsx         page assembly only
@@ -80,8 +80,7 @@ and
 Examples:
 - navigation behavior
 - theme toggle
-- cursor effect
-- typing animation
+- reveal animation
 - scroll reveal animation
 
 ### 4. Change colors, spacing, fonts, and styling

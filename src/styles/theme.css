@@ -2,21 +2,21 @@
 
 :root {
   color-scheme: dark;
-  --bg: #06131f;
-  --bg-soft: #0b1b2c;
-  --bg-elevated: rgba(12, 28, 42, 0.84);
-  --surface: rgba(14, 31, 47, 0.88);
-  --surface-strong: rgba(19, 38, 58, 0.96);
-  --surface-2: rgba(26, 46, 68, 0.88);
-  --line: rgba(155, 197, 255, 0.14);
-  --line-strong: rgba(155, 197, 255, 0.24);
-  --text: #f6fbff;
-  --text-muted: #a4bacd;
-  --text-dim: #6f8598;
-  --accent: #8df7d8;
-  --accent-2: #ffd38f;
-  --accent-3: #91b6ff;
-  --shadow: 0 24px 80px rgba(1, 11, 20, 0.4);
+  --bg: #0b1320;
+  --bg-soft: #101b2b;
+  --bg-elevated: rgba(17, 27, 41, 0.9);
+  --surface: rgba(18, 29, 44, 0.94);
+  --surface-strong: rgba(24, 36, 53, 0.98);
+  --surface-2: rgba(21, 35, 52, 0.94);
+  --line: rgba(154, 179, 208, 0.16);
+  --line-strong: rgba(154, 179, 208, 0.28);
+  --text: #f4f7fb;
+  --text-muted: #b0bfd0;
+  --text-dim: #7f90a4;
+  --accent: #8cb8ff;
+  --accent-2: #a8d3c1;
+  --accent-3: #c2d7ff;
+  --shadow: 0 16px 40px rgba(2, 8, 18, 0.22);
   --radius-lg: 32px;
   --radius-md: 22px;
   --radius-sm: 14px;
@@ -29,21 +29,21 @@
 
 :root[data-theme='light'] {
   color-scheme: light;
-  --bg: #f2f7fb;
-  --bg-soft: #e6eef5;
-  --bg-elevated: rgba(255, 255, 255, 0.82);
-  --surface: rgba(255, 255, 255, 0.9);
+  --bg: #f4f7fb;
+  --bg-soft: #edf2f7;
+  --bg-elevated: rgba(255, 255, 255, 0.9);
+  --surface: rgba(255, 255, 255, 0.96);
   --surface-strong: rgba(255, 255, 255, 0.96);
-  --surface-2: rgba(232, 241, 248, 0.92);
-  --line: rgba(18, 48, 80, 0.12);
-  --line-strong: rgba(18, 48, 80, 0.2);
-  --text: #102033;
-  --text-muted: #465a70;
-  --text-dim: #6f8397;
-  --accent: #0f9c83;
-  --accent-2: #e08d2d;
-  --accent-3: #376fd6;
-  --shadow: 0 24px 70px rgba(110, 133, 155, 0.2);
+  --surface-2: rgba(236, 242, 248, 0.96);
+  --line: rgba(32, 53, 78, 0.12);
+  --line-strong: rgba(32, 53, 78, 0.2);
+  --text: #122033;
+  --text-muted: #516274;
+  --text-dim: #75869a;
+  --accent: #2f5fa7;
+  --accent-2: #3d7a64;
+  --accent-3: #5a7eb4;
+  --shadow: 0 14px 36px rgba(110, 133, 155, 0.16);
 }
 
 html {
@@ -53,10 +53,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background:
-    radial-gradient(circle at top left, rgba(141, 247, 216, 0.12), transparent 28%),
-    radial-gradient(circle at 85% 14%, rgba(145, 182, 255, 0.14), transparent 24%),
-    linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.65;

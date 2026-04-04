@@ -1,41 +1,41 @@
 import { siteIdentity } from './site.js'
 
 export const heroSection = {
-  eyebrow: 'Portfolio for data and AI opportunities',
+  eyebrow: 'Machine learning, data science, and analytics',
   greeting: 'Hello, I am',
-  rotatingWords: ['Analyst.', 'Data Scientist.', 'Builder.', 'Problem Solver.'],
+  roleTitle: 'Computer Science graduate building end-to-end ML systems.',
   description:
-    'I build practical data projects that move from analysis to implementation, with a strong interest in systems that are useful, readable, and ready to ship.',
+    'I focus on predictive maintenance, OCR automation, and practical AI tools, backed by strong foundations in linear algebra, probability, algorithms, and statistical thinking.',
   primaryAction: {
-    label: 'See selected work',
+    label: 'View projects',
     href: '#projects',
   },
-  secondaryActionLabel: 'Open resume',
+  secondaryActionLabel: 'Download resume',
   quickFacts: [
     { label: 'Based in', value: siteIdentity.location },
-    { label: 'Focus', value: 'Data science, analytics, and AI products' },
-    { label: 'Current mode', value: 'Building practical portfolio projects' },
+    { label: 'Current role', value: 'Data Science & ML Intern at LogicVeda' },
+    { label: 'Focus', value: 'ML systems, forecasting, and applied analytics' },
   ],
   signals: [
     {
-      value: '10+',
-      label: 'portfolio projects',
-      note: 'Built across analytics, machine learning, and product-focused workflows.',
+      value: '1716',
+      label: 'GATE 2026 rank',
+      note: 'Ranked 1716 in Data Science and AI.',
+    },
+    {
+      value: '2',
+      label: 'internships',
+      note: 'Experience across LogicVeda Technologies and Cognifyz Technologies.',
     },
     {
       value: '3',
-      label: 'core strengths',
-      note: 'Data analysis, machine learning, and clean implementation.',
-    },
-    {
-      value: '2025',
-      label: 'key milestone',
-      note: 'Qualified GATE in Data Science and AI.',
+      label: 'active project tracks',
+      note: 'AI habit tracking, predictive maintenance, and OCR automation.',
     },
   ],
-  statusTitle: 'Focused on roles where analytics, machine learning, and execution all matter.',
+  statusTitle: 'Currently working on predictive maintenance and RUL forecasting systems.',
   statusText:
-    'I like projects that begin with messy information and end with something people can actually use.',
+    'I enjoy building the full pipeline: data ingestion, feature engineering, model development, APIs, and production-minded workflows.',
 }
 
 export const highlightsSection = {

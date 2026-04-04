@@ -129,23 +129,6 @@
   }
 }
 
-@media (pointer: fine) {
-  body,
-  a,
-  button,
-  input,
-  textarea {
-    cursor: none;
-  }
-}
-
-@media (pointer: coarse) {
-  .cursor-ring,
-  .cursor-dot {
-    display: none;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -1,12 +1,12 @@
 export const contactSection = {
   labelNumber: '04',
   label: 'Contact',
-  titleLines: ["Let's build something", 'useful and ambitious.'],
+  titleLines: ['Open to machine learning,', 'data science, and analytics roles.'],
   intro:
-    'I am open to internships, entry-level roles, freelance collaborations, and project conversations in data, analytics, or AI.',
+    'I am currently looking for opportunities where I can contribute to machine learning pipelines, analytics, and applied AI systems.',
   formSuccessMessage: 'Your email app should open with the drafted message.',
   formNote: 'This opens your default email app with your message prefilled.',
-  availabilityTitle: 'I care about momentum, clarity, and follow-through.',
+  availabilityTitle: 'Interested in internships, entry-level roles, and serious project work.',
   availabilityText:
-    'If your team values ownership, curiosity, and someone who enjoys making the final result feel polished, I would love to talk.',
+    'If you are building something around forecasting, analytics, or ML systems, I would be glad to talk.',
 }
