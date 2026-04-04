@@ -2,5 +2,4 @@
 
 Personal portfolio website.
 
-Live:
-`https://about-me-kappa-ebon.vercel.app`
+Live: [Portfolio](https://about-me-kappa-ebon.vercel.app)
