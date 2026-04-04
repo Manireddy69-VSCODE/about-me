@@ -31,12 +31,12 @@ export const projectsSection = {
       title: 'OCR-Based Text Extraction',
       tag: 'Automation Utility',
       description:
-        'An OCR pipeline built with Tesseract and OpenCV for extracting text from images.',
-      outcome: 'Uses preprocessing to improve accuracy on noisy inputs.',
-      tech: ['Python', 'OpenCV', 'Tesseract', 'OCR'],
+        'A lightweight OCR web app that extracts text from uploaded images directly in the browser.',
+      outcome: 'Rebuilt as a deployable utility with sample inputs, copy, and text export actions.',
+      tech: ['JavaScript', 'Tesseract.js', 'Vite', 'OCR'],
       year: '2025',
       accentColor: '#f1b37c',
-      href: '',
+      href: 'https://image-to-text-two-delta.vercel.app',
     },
   ],
 }
