@@ -4,10 +4,8 @@ import Navbar from './components/Navbar.jsx'
 import ThemeToggle from './components/ThemeToggle.jsx'
 import { navigationLinks, siteIdentity } from './data/index.js'
 import useScrollReveal from './hooks/useScrollReveal.js'
-import AboutSection from './sections/AboutSection.jsx'
 import ContactSection from './sections/ContactSection.jsx'
 import HeroSection from './sections/HeroSection.jsx'
-import HighlightsSection from './sections/HighlightsSection.jsx'
 import ProjectsSection from './sections/ProjectsSection.jsx'
 import SkillsSection from './sections/SkillsSection.jsx'
 import './styles/site.css'
@@ -46,11 +44,9 @@ export default function App() {
 
       <main>
         <HeroSection resumeUrl={resumeUrl} />
-        <HighlightsSection />
-        <AboutSection />
-        <SkillsSection />
         <ProjectsSection />
-        <ContactSection />
+        <SkillsSection />
+        <ContactSection resumeUrl={resumeUrl} />
       </main>
 
       <Footer />

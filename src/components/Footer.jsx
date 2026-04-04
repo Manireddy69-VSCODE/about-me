@@ -10,9 +10,7 @@ export default function Footer() {
             {siteIdentity.shortLogo}
             <span className="logo-bracket">]</span>
           </div>
-          <p className="footer-copy">
-            Portfolio for {siteIdentity.fullName}. Built with React, Vite, and a structure that is easy to update later.
-          </p>
+          <p className="footer-copy">{siteIdentity.fullName}. Machine learning, data science, and analytics.</p>
         </div>
 
         <div className="footer-links">

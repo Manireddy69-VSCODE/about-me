@@ -4,15 +4,14 @@ import { projectsSection } from '../data/index.js'
 function ProjectCard({ project, index }) {
   const cardContent = (
     <>
-      <div className="project-topline">
-        <span className="project-num" style={{ color: project.accentColor }}>
-          {project.number}
+      <div className="project-meta">
+        <span className="project-tag" style={{ color: project.accentColor }}>
+          {project.tag}
         </span>
         <span className="project-year">{project.year}</span>
       </div>
 
       <div className="project-main">
-        <span className="project-tag">{project.tag}</span>
         <h3>{project.title}</h3>
         <p className="project-desc">{project.description}</p>
         <p className="project-outcome">{project.outcome}</p>
@@ -68,7 +67,7 @@ export default function ProjectsSection() {
 
         <div className="projects-list">
           {projectsSection.items.map((project, index) => (
-            <ProjectCard key={project.number} project={project} index={index} />
+            <ProjectCard key={project.title} project={project} index={index} />
           ))}
         </div>
       </div>

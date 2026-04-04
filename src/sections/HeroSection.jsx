@@ -47,23 +47,20 @@ export default function HeroSection({ resumeUrl }) {
           <h2>{heroSection.statusTitle}</h2>
           <p>{heroSection.statusText}</p>
 
+          <div className="hero-metrics">
+            {heroSection.metrics.map((metric) => (
+              <div key={metric.label} className="hero-metric">
+                <span>{metric.label}</span>
+                <strong>{metric.value}</strong>
+              </div>
+            ))}
+          </div>
+
           <div className="fact-list">
             {heroSection.quickFacts.map((fact) => (
               <div key={fact.label} className="fact-row">
                 <span>{fact.label}</span>
                 <span>{fact.value}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="panel-card signal-card">
-          <span className="panel-kicker">Signals</span>
-          <div className="signal-grid">
-            {heroSection.signals.map((signal) => (
-              <div key={signal.label} className="signal-item">
-                <strong>{signal.value}</strong>
-                <span>{signal.label}</span>
               </div>
             ))}
           </div>

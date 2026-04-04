@@ -8,7 +8,7 @@ export const siteIdentity = {
   resumeFileName: 'resume.pdf',
 }
 
-export const navigationLinks = ['About', 'Skills', 'Projects', 'Contact']
+export const navigationLinks = ['Projects', 'Skills', 'Contact']
 
 export const contactLinks = [
   {

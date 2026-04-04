@@ -1,28 +1,28 @@
 export const skillsSection = {
   labelNumber: '02',
   label: 'Skills',
-  title: 'Tools I use to build ML systems.',
+  title: 'Core tools and areas.',
   intro:
-    'My toolkit is centered on data work, statistical reasoning, and production-minded machine learning pipelines.',
+    'A compact view of the tools I use most across analytics and machine learning work.',
   groups: [
     {
       category: 'Languages',
-      summary: 'Core programming and query languages I use across projects and analysis work.',
+      summary: 'For implementation, querying, and analysis.',
       items: ['Python', 'SQL', 'R'],
     },
     {
       category: 'ML & Statistics',
-      summary: 'Libraries and concepts I rely on for modeling, evaluation, and statistical reasoning.',
+      summary: 'For modeling, experimentation, and evaluation.',
       items: ['Pandas', 'NumPy', 'Scikit-learn', 'Regression', 'Hypothesis Testing'],
     },
     {
       category: 'Data & BI',
-      summary: 'Tools for querying, dashboarding, and translating data into usable decisions.',
+      summary: 'For querying, reporting, and dashboards.',
       items: ['MySQL', 'BigQuery', 'Tableau', 'Power BI', 'Statistics'],
     },
     {
       category: 'Systems & Workflow',
-      summary: 'Building pipelines and interfaces around models instead of stopping at notebooks.',
+      summary: 'For APIs, notebooks, and structured ML workflows.',
       items: ['FastAPI', 'Jupyter Notebook', 'Feature Engineering', 'DSA', 'Machine Learning'],
     },
   ],

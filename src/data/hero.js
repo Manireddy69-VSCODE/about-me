@@ -1,43 +1,26 @@
 import { siteIdentity } from './site.js'
 
 export const heroSection = {
-  eyebrow: 'Machine learning, data science, and analytics',
+  eyebrow: 'Machine learning and data science',
   greeting: 'Hello, I am',
-  roleTitle: 'Computer Science graduate building end-to-end ML systems.',
+  roleTitle: 'Computer Science graduate focused on practical ML systems.',
   description:
-    'I focus on predictive maintenance, OCR automation, and practical AI tools, backed by strong foundations in linear algebra, probability, algorithms, and statistical thinking.',
+    'I build machine learning projects around forecasting, predictive maintenance, and OCR, with hands-on experience across data pipelines, modeling, and API-backed systems.',
   primaryAction: {
     label: 'View projects',
     href: '#projects',
   },
   secondaryActionLabel: 'Download resume',
-  quickFacts: [
+  metrics: [
+    { label: 'Current', value: 'ML Intern at LogicVeda' },
+    { label: 'GATE DA 2026', value: 'Rank 1716' },
     { label: 'Based in', value: siteIdentity.location },
-    { label: 'Current role', value: 'Data Science & ML Intern at LogicVeda' },
-    { label: 'Focus', value: 'ML systems, forecasting, and applied analytics' },
   ],
-  signals: [
-    {
-      value: '1716',
-      label: 'GATE 2026 rank',
-      note: 'Ranked 1716 in Data Science and AI.',
-    },
-    {
-      value: '2',
-      label: 'internships',
-      note: 'Experience across LogicVeda Technologies and Cognifyz Technologies.',
-    },
-    {
-      value: '3',
-      label: 'active project tracks',
-      note: 'AI habit tracking, predictive maintenance, and OCR automation.',
-    },
+  quickFacts: [
+    { label: 'Focus', value: 'Predictive maintenance and forecasting' },
+    { label: 'Stack', value: 'Python, SQL, FastAPI, Scikit-learn' },
+    { label: 'Looking for', value: 'ML, data science, and analytics roles' },
   ],
-  statusTitle: 'Currently working on predictive maintenance and RUL forecasting systems.',
-  statusText:
-    'I enjoy building the full pipeline: data ingestion, feature engineering, model development, APIs, and production-minded workflows.',
-}
-
-export const highlightsSection = {
-  items: heroSection.signals,
+  statusTitle: 'Currently building predictive maintenance and RUL forecasting systems.',
+  statusText: 'Recent work includes anomaly detection, time-series forecasting, OCR automation, and end-to-end machine learning workflows.',
 }
