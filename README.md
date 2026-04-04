@@ -2,4 +2,4 @@
 
 Personal portfolio website.
 
-Live: [Portfolio](https://about-me-kappa-ebon.vercel.app)
+Live: [Portfolio](https://manireddy69.vercel.app)
