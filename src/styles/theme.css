@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  color-scheme: dark;
+  --bg: #06131f;
+  --bg-soft: #0b1b2c;
+  --bg-elevated: rgba(12, 28, 42, 0.84);
+  --surface: rgba(14, 31, 47, 0.88);
+  --surface-strong: rgba(19, 38, 58, 0.96);
+  --surface-2: rgba(26, 46, 68, 0.88);
+  --line: rgba(155, 197, 255, 0.14);
+  --line-strong: rgba(155, 197, 255, 0.24);
+  --text: #f6fbff;
+  --text-muted: #a4bacd;
+  --text-dim: #6f8598;
+  --accent: #8df7d8;
+  --accent-2: #ffd38f;
+  --accent-3: #91b6ff;
+  --shadow: 0 24px 80px rgba(1, 11, 20, 0.4);
+  --radius-lg: 32px;
+  --radius-md: 22px;
+  --radius-sm: 14px;
+  --max-width: 1180px;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --transition: 220ms ease;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f2f7fb;
+  --bg-soft: #e6eef5;
+  --bg-elevated: rgba(255, 255, 255, 0.82);
+  --surface: rgba(255, 255, 255, 0.9);
+  --surface-strong: rgba(255, 255, 255, 0.96);
+  --surface-2: rgba(232, 241, 248, 0.92);
+  --line: rgba(18, 48, 80, 0.12);
+  --line-strong: rgba(18, 48, 80, 0.2);
+  --text: #102033;
+  --text-muted: #465a70;
+  --text-dim: #6f8397;
+  --accent: #0f9c83;
+  --accent-2: #e08d2d;
+  --accent-3: #376fd6;
+  --shadow: 0 24px 70px rgba(110, 133, 155, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(141, 247, 216, 0.12), transparent 28%),
+    radial-gradient(circle at 85% 14%, rgba(145, 182, 255, 0.14), transparent 24%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: #062233;
+}

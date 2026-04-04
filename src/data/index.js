@@ -1,0 +1,6 @@
+export { aboutSection } from './about.js'
+export { contactSection } from './contact.js'
+export { heroSection, highlightsSection } from './hero.js'
+export { projectsSection } from './projects.js'
+export { contactLinks, footerLinks, navigationLinks, siteIdentity } from './site.js'
+export { skillsSection } from './skills.js'
