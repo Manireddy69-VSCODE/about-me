@@ -19,7 +19,9 @@ export default function SkillsSection() {
               className="skill-group reveal"
               style={{ animationDelay: `${index * 0.08}s` }}
             >
-              <span className="skill-index">0{index + 1}</span>
+              <div className="skill-topline">
+                <span className="skill-index">0{index + 1}</span>
+              </div>
               <div className="skill-header">
                 <h3>{group.category}</h3>
                 <p>{group.summary}</p>

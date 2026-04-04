@@ -7,9 +7,9 @@ export default function ContactSection({ resumeUrl }) {
       <div className="container">
         <SectionLabel number={contactSection.labelNumber} label={contactSection.label} />
 
-        <div className="contact-shell">
-          <div className="contact-copy reveal">
-            <h2 className="section-title reveal">
+        <div className="contact-panel reveal">
+          <div className="contact-copy">
+            <h2 className="section-title">
               {contactSection.titleLines[0]}
               <br />
               <em>{contactSection.titleLines[1]}</em>
@@ -36,13 +36,11 @@ export default function ContactSection({ resumeUrl }) {
             </div>
           </div>
 
-          <div className="contact-stack reveal">
-            <article className="availability-card">
-              <span className="panel-kicker">Availability</span>
-              <h3>{contactSection.availabilityTitle}</h3>
-              <p>{contactSection.availabilityText}</p>
-            </article>
-          </div>
+          <article className="availability-card">
+            <span className="panel-kicker">Availability</span>
+            <h3>{contactSection.availabilityTitle}</h3>
+            <p>{contactSection.availabilityText}</p>
+          </article>
         </div>
       </div>
     </section>

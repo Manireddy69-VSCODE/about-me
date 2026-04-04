@@ -2,6 +2,8 @@ import SectionLabel from '../components/SectionLabel.jsx'
 import { projectsSection } from '../data/index.js'
 
 function ProjectCard({ project, index }) {
+  const cardClassName = `project-card${index === 0 ? ' featured' : ''} reveal`
+
   const cardContent = (
     <>
       <div className="project-meta">
@@ -39,7 +41,7 @@ function ProjectCard({ project, index }) {
         href={project.href}
         target="_blank"
         rel="noreferrer"
-        className="project-card reveal"
+        className={cardClassName}
         style={{ animationDelay: `${index * 0.08}s` }}
       >
         {cardContent}
@@ -48,7 +50,7 @@ function ProjectCard({ project, index }) {
   }
 
   return (
-    <article className="project-card project-card-static reveal" style={{ animationDelay: `${index * 0.08}s` }}>
+    <article className={`${cardClassName} project-card-static`} style={{ animationDelay: `${index * 0.08}s` }}>
       {cardContent}
     </article>
   )

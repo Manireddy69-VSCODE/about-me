@@ -1,49 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  color-scheme: dark;
-  --bg: #0b1320;
-  --bg-soft: #101b2b;
-  --bg-elevated: rgba(17, 27, 41, 0.9);
-  --surface: rgba(18, 29, 44, 0.94);
-  --surface-strong: rgba(24, 36, 53, 0.98);
-  --surface-2: rgba(21, 35, 52, 0.94);
-  --line: rgba(154, 179, 208, 0.16);
-  --line-strong: rgba(154, 179, 208, 0.28);
-  --text: #f4f7fb;
-  --text-muted: #b0bfd0;
-  --text-dim: #7f90a4;
-  --accent: #8cb8ff;
-  --accent-2: #a8d3c1;
-  --accent-3: #c2d7ff;
-  --shadow: 0 16px 40px rgba(2, 8, 18, 0.22);
-  --radius-lg: 32px;
-  --radius-md: 22px;
+  color-scheme: light;
+  --bg: #f4efe7;
+  --bg-alt: #ede5da;
+  --surface: rgba(255, 251, 245, 0.88);
+  --surface-strong: #fffaf3;
+  --surface-soft: rgba(252, 246, 238, 0.66);
+  --line: rgba(72, 52, 33, 0.12);
+  --line-strong: rgba(72, 52, 33, 0.24);
+  --text: #1c1610;
+  --text-muted: #6b6156;
+  --text-dim: #907f6f;
+  --accent: #b4612e;
+  --accent-soft: #e8c8ad;
+  --accent-2: #476a58;
+  --shadow: 0 22px 50px rgba(74, 48, 22, 0.08);
+  --radius-xl: 36px;
+  --radius-lg: 28px;
+  --radius-md: 20px;
   --radius-sm: 14px;
-  --max-width: 1180px;
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Manrope', sans-serif;
-  --font-mono: 'Space Mono', monospace;
+  --max-width: 1160px;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
   --transition: 220ms ease;
 }
 
-:root[data-theme='light'] {
-  color-scheme: light;
-  --bg: #f4f7fb;
-  --bg-soft: #edf2f7;
-  --bg-elevated: rgba(255, 255, 255, 0.9);
-  --surface: rgba(255, 255, 255, 0.96);
-  --surface-strong: rgba(255, 255, 255, 0.96);
-  --surface-2: rgba(236, 242, 248, 0.96);
-  --line: rgba(32, 53, 78, 0.12);
-  --line-strong: rgba(32, 53, 78, 0.2);
-  --text: #122033;
-  --text-muted: #516274;
-  --text-dim: #75869a;
-  --accent: #2f5fa7;
-  --accent-2: #3d7a64;
-  --accent-3: #5a7eb4;
-  --shadow: 0 14px 36px rgba(110, 133, 155, 0.16);
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #11161d;
+  --bg-alt: #171f29;
+  --surface: rgba(25, 32, 41, 0.82);
+  --surface-strong: #1c2530;
+  --surface-soft: rgba(30, 39, 50, 0.66);
+  --line: rgba(255, 236, 214, 0.1);
+  --line-strong: rgba(255, 236, 214, 0.18);
+  --text: #f7f0e7;
+  --text-muted: #cbbfb1;
+  --text-dim: #9a8e80;
+  --accent: #e29559;
+  --accent-soft: rgba(226, 149, 89, 0.18);
+  --accent-2: #8db194;
+  --shadow: 0 22px 60px rgba(0, 0, 0, 0.3);
 }
 
 html {
@@ -53,11 +52,26 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+  background:
+    radial-gradient(circle at top left, rgba(180, 97, 46, 0.12), transparent 26%),
+    radial-gradient(circle at 85% 12%, rgba(71, 106, 88, 0.1), transparent 24%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
   color: var(--text);
   font-family: var(--font-body);
-  line-height: 1.65;
+  line-height: 1.7;
   overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 90%);
+  opacity: 0.25;
 }
 
 body.menu-open {
@@ -66,5 +80,5 @@ body.menu-open {
 
 ::selection {
   background: var(--accent);
-  color: #062233;
+  color: #fff7f1;
 }
