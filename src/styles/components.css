@@ -68,7 +68,19 @@
 }
 
 .logo-bracket {
-  color: var(--accent);
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+.logo-chevron {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
+.logo-text {
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -95,13 +107,21 @@
 
 .nav-links a:hover {
   background: var(--surface-soft);
-  color: var(--text);
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
 }
 
 .nav-cta {
-  border: 1px solid var(--line);
-  background: var(--surface-soft);
+  border: 1px solid var(--accent);
+  background: rgba(212, 98, 10, 0.15);
   color: var(--text) !important;
+  transition: all var(--transition);
+}
+
+.nav-cta:hover {
+  border-color: var(--accent-2);
+  background: rgba(0, 255, 224, 0.1);
+  box-shadow: 0 0 12px rgba(0, 255, 224, 0.3);
 }
 
 .hamburger {
@@ -148,6 +168,12 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
   min-height: 38px;
   padding: 0 14px;
   border-radius: 999px;
@@ -187,14 +213,15 @@
 }
 
 .btn-secondary {
-  border-color: var(--line);
-  background: var(--surface);
+  border-color: var(--accent);
+  background: transparent;
   color: var(--text);
 }
 
 .btn-secondary:hover {
-  border-color: var(--line-strong);
-  background: var(--surface-strong);
+  border-color: var(--accent);
+  background: rgba(212, 98, 10, 0.1);
+  box-shadow: 0 0 16px rgba(212, 98, 10, 0.3);
 }
 
 .hero-card,
@@ -223,12 +250,14 @@
   min-height: 32px;
   padding: 0 12px;
   border-radius: 999px;
-  background: var(--accent-soft);
+  background: rgba(212, 98, 10, 0.15);
   color: var(--accent);
+  border: 1px solid var(--accent);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  box-shadow: 0 0 8px rgba(212, 98, 10, 0.2);
 }
 
 .footer {

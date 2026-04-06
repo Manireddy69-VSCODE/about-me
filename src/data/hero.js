@@ -1,7 +1,7 @@
 import { siteIdentity } from './site.js'
 
 export const heroSection = {
-  eyebrow: 'Machine learning and data science',
+  eyebrow: '// Classified — Sector 7 Field Operative',
   greeting: 'Hello, I am',
   roleTitle: 'Computer Science graduate focused on practical ML systems.',
   description:

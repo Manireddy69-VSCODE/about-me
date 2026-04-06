@@ -69,6 +69,50 @@ export default function HeroSection({ resumeUrl }) {
               ))}
             </div>
           </article>
+
+          <div className="targeting-reticle reveal">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="reticle-svg">
+              <defs>
+                <style>{`
+                  .reticle-amber { stroke: #d4620a; fill: none; }
+                  .reticle-teal { stroke: #00ffe0; fill: none; }
+                  .reticle-glow-amber { filter: drop-shadow(0 0 8px rgba(212, 98, 10, 0.6)); }
+                  .reticle-glow-teal { filter: drop-shadow(0 0 8px rgba(0, 255, 224, 0.6)); }
+                `}</style>
+              </defs>
+              
+              {/* Outer hexagon */}
+              <polygon points="100,30 165,65 165,135 100,170 35,135 35,65" className="reticle-amber reticle-glow-amber" strokeWidth="2"/>
+              
+              {/* Middle hexagon */}
+              <polygon points="100,50 150,80 150,120 100,150 50,120 50,80" className="reticle-teal reticle-glow-teal" strokeWidth="1.5" opacity="0.8"/>
+              
+              {/* Inner hexagon */}
+              <polygon points="100,70 130,85 130,115 100,130 70,115 70,85" className="reticle-amber reticle-glow-amber" strokeWidth="1" opacity="0.6"/>
+              
+              {/* Horizontal crosshair */}
+              <line x1="30" y1="100" x2="170" y2="100" className="reticle-teal" strokeWidth="1" opacity="0.7"/>
+              
+              {/* Vertical crosshair */}
+              <line x1="100" y1="30" x2="100" y2="170" className="reticle-amber" strokeWidth="1" opacity="0.7"/>
+              
+              {/* Corner targeting marks */}
+              <line x1="55" y1="55" x2="75" y2="55" className="reticle-teal" strokeWidth="1" opacity="0.8"/>
+              <line x1="55" y1="55" x2="55" y2="75" className="reticle-teal" strokeWidth="1" opacity="0.8"/>
+              
+              <line x1="145" y1="55" x2="125" y2="55" className="reticle-amber" strokeWidth="1" opacity="0.8"/>
+              <line x1="145" y1="55" x2="145" y2="75" className="reticle-amber" strokeWidth="1" opacity="0.8"/>
+              
+              <line x1="55" y1="145" x2="75" y2="145" className="reticle-amber" strokeWidth="1" opacity="0.8"/>
+              <line x1="55" y1="145" x2="55" y2="125" className="reticle-amber" strokeWidth="1" opacity="0.8"/>
+              
+              <line x1="145" y1="145" x2="125" y2="145" className="reticle-teal" strokeWidth="1" opacity="0.8"/>
+              <line x1="145" y1="145" x2="145" y2="125" className="reticle-teal" strokeWidth="1" opacity="0.8"/>
+              
+              {/* Center dot */}
+              <circle cx="100" cy="100" r="3" className="reticle-amber" fill="#d4620a" opacity="0.9"/>
+            </svg>
+          </div>
         </div>
       </div>
     </section>

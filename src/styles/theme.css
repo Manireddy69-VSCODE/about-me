@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  color-scheme: light;
-  --bg: #f4efe7;
-  --bg-alt: #ede5da;
-  --surface: rgba(255, 251, 245, 0.88);
-  --surface-strong: #fffaf3;
-  --surface-soft: rgba(252, 246, 238, 0.66);
-  --line: rgba(72, 52, 33, 0.12);
-  --line-strong: rgba(72, 52, 33, 0.24);
-  --text: #1c1610;
-  --text-muted: #6b6156;
-  --text-dim: #907f6f;
-  --accent: #b4612e;
-  --accent-soft: #e8c8ad;
-  --accent-2: #476a58;
-  --shadow: 0 22px 50px rgba(74, 48, 22, 0.08);
+  color-scheme: dark;
+  --bg: #080a0f;
+  --bg-alt: #0d1117;
+  --surface: rgba(13, 17, 23, 0.88);
+  --surface-strong: #0f131a;
+  --surface-soft: rgba(25, 32, 41, 0.66);
+  --line: rgba(212, 98, 10, 0.2);
+  --line-strong: rgba(212, 98, 10, 0.4);
+  --text: #ffffff;
+  --text-muted: #8a9bb0;
+  --text-dim: #5a6b7f;
+  --accent: #d4620a;
+  --accent-soft: rgba(212, 98, 10, 0.15);
+  --accent-2: #00ffe0;
+  --shadow: 0 22px 60px rgba(0, 0, 0, 0.6);
   --radius-xl: 36px;
   --radius-lg: 28px;
   --radius-md: 20px;
@@ -25,28 +25,34 @@
   --font-body: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
   --transition: 220ms ease;
+  --metal-overlay: repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 8px);
 }
 
-:root[data-theme='dark'] {
+:root[data-theme='light'] {
   color-scheme: dark;
-  --bg: #11161d;
-  --bg-alt: #171f29;
-  --surface: rgba(25, 32, 41, 0.82);
-  --surface-strong: #1c2530;
-  --surface-soft: rgba(30, 39, 50, 0.66);
-  --line: rgba(255, 236, 214, 0.1);
-  --line-strong: rgba(255, 236, 214, 0.18);
-  --text: #f7f0e7;
-  --text-muted: #cbbfb1;
-  --text-dim: #9a8e80;
-  --accent: #e29559;
-  --accent-soft: rgba(226, 149, 89, 0.18);
-  --accent-2: #8db194;
-  --shadow: 0 22px 60px rgba(0, 0, 0, 0.3);
+  --bg: #080a0f;
+  --bg-alt: #0d1117;
+  --surface: rgba(13, 17, 23, 0.88);
+  --surface-strong: #0f131a;
+  --surface-soft: rgba(25, 32, 41, 0.66);
+  --line: rgba(212, 98, 10, 0.2);
+  --line-strong: rgba(212, 98, 10, 0.4);
+  --text: #ffffff;
+  --text-muted: #8a9bb0;
+  --text-dim: #5a6b7f;
+  --accent: #d4620a;
+  --accent-soft: rgba(212, 98, 10, 0.15);
+  --accent-2: #00ffe0;
+  --shadow: 0 22px 60px rgba(0, 0, 0, 0.6);
+  --metal-overlay: repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 8px);
 }
 
 html {
   scroll-behavior: smooth;
+  background: #080a0f;
+  background-image: 
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><defs><pattern id="scan" x="0" y="0" width="100" height="2" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="100" y2="0" stroke="rgba(212,98,10,0.06)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="%23080a0f"/><rect width="100" height="100" fill="url(%23scan)"/></svg>'),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 8px);
 }
 
 body {

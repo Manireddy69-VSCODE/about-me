@@ -53,8 +53,9 @@ img {
   width: 28px;
   height: 28px;
   border-radius: 999px;
-  border: 1px solid var(--line-strong);
+  border: 1px solid var(--accent);
   color: var(--accent);
+  box-shadow: 0 0 12px rgba(212, 98, 10, 0.4);
 }
 
 .section-title {

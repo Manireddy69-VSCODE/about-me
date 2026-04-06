@@ -38,5 +38,16 @@ export const projectsSection = {
       accentColor: '#f1b37c',
       href: 'https://image-to-text-two-delta.vercel.app',
     },
+    {
+      title: 'Job Salary Predictor',
+      tag: 'Learning Project',
+      description:
+        'End-to-end ML project: data exploration → baseline model → XGBoost optimization → FastAPI + Streamlit deployment.',
+      outcome: 'Learned how training pipelines, model persistence, and inference consistency work in practice.',
+      tech: ['Python', 'XGBoost', 'Pandas', 'FastAPI', 'Streamlit'],
+      year: '2026',
+      accentColor: '#ffb3ba',
+      href: 'https://github.com/Manireddy69-VSCODE/job-insights-and-salary-prediction',
+    },
   ],
 }
