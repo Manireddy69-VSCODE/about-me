@@ -350,7 +350,8 @@
 .tech-pill:hover {
   border-color: var(--accent-2);
   color: var(--accent-2);
-  box-shadow: 0 0 8px rgba(0, 255, 224, 0.2);\n}
+  box-shadow: 0 0 8px rgba(0, 255, 224, 0.2);
+}
 
 .project-cta-wrap {
   display: flex;

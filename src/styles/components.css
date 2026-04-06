@@ -174,17 +174,6 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-  min-height: 38px;
-  padding: 0 14px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
 
 .btn-primary,
 .btn-secondary {
